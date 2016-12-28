@@ -146,8 +146,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
 
             case R.id.btnDel:
-                if (etNum.length() != 1 && !etNum.getText().toString().equals("NaN")) {
+                if (etNum.length() != 1 && !etNum.getText().toString().equals("NaN")
+                        && etNum.getText().toString().charAt(etNum.length()-2) != '.') {
                     etNum.setText(etNum.getText().toString().substring(0, etNum.length() - 1));
+
+                } else if (etNum.getText().toString().charAt(etNum.length()-2) == '.'
+                        && etNum.length() != 2) {
+                    etNum.setText(etNum.getText().toString().substring(0, etNum.length() - 2));
                 } else {
                     etNum.setText("0");
                     operation = NULL;
