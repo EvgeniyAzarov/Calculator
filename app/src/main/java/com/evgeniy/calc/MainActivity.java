@@ -147,11 +147,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
             case R.id.btnDel:
                 if (etNum.length() != 1 && !etNum.getText().toString().equals("NaN")
-                        && etNum.getText().toString().charAt(etNum.length()-2) != '.') {
+                        && etNum.getText().toString().charAt(etNum.length() - 2) != '.') {
                     etNum.setText(etNum.getText().toString().substring(0, etNum.length() - 1));
-
-                } else if (etNum.getText().toString().charAt(etNum.length()-2) == '.'
-                        && etNum.length() != 2) {
+                } else if (etNum.length() > 2
+                        && etNum.getText().toString().charAt(etNum.length() - 2) == '.') {
                     etNum.setText(etNum.getText().toString().substring(0, etNum.length() - 2));
                 } else {
                     etNum.setText("0");
@@ -175,8 +174,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 double secondNumber;
 
                 resetNumber = true;
-
-                firstNumber = Double.valueOf(etNum.getText().toString());
 
                 if (newNumber && operation != NULL) {
                     secondNumber = Double.valueOf(etNum.getText().toString());
@@ -225,7 +222,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
         }
 
-        return result % 1 == 0 ? Double.toString((int)result) : Double.toString(result);
+        return result % 1 == 0 ? Double.toString((int) result) : Double.toString(result);
     }
 
     private boolean tvNumIsFull() {

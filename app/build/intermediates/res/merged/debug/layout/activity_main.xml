@@ -222,7 +222,7 @@
             android:layout_height="wrap_content"
             android:text="0"
             android:textSize="26sp"
-            android:gravity="end"
+            android:gravity="end|center_vertical"
             android:ems="10"
             android:id="@+id/etNum"
             android:inputType="numberDecimal"
