@@ -169,21 +169,19 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
                 double secondNumber;
 
-                if (newNumber) {
-                    if (operation != NULL) {
-                        secondNumber = Double.valueOf(etNum.getText().toString());
-                        etNum.setText(doCalc(firstNumber, secondNumber, operation));
-                        newNumber = false;
-                    }
+                resetNumber = true;
 
-                    operation = (OperationType) view.getTag();
+                firstNumber = Double.valueOf(etNum.getText().toString());
 
-                    firstNumber = Double.valueOf(etNum.getText().toString());
-
-                    resetNumber = true;
-                } else {
-                    operation = (OperationType) view.getTag();
+                if (newNumber && operation != NULL) {
+                    secondNumber = Double.valueOf(etNum.getText().toString());
+                    etNum.setText(doCalc(firstNumber, secondNumber, operation));
                 }
+                firstNumber = Double.valueOf(etNum.getText().toString());
+
+                operation = (OperationType) view.getTag();
+
+                newNumber = false;
 
                 break;
 
