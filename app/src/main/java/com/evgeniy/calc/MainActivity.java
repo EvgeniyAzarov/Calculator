@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import static com.evgeniy.calc.MainActivity.OperationType.NULL;
@@ -14,7 +14,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
     enum OperationType {ADD, SUBTRACT, MULTIPLE, DIVISION, NULL}
 
     private double firstNumber = 0;
-    private double secondNumber = 0;
 
     boolean resetNumber = false;
 
@@ -22,97 +21,80 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     private OperationType operation = NULL;
 
-    private TextView tvNum;
-
-    private Button btnDel;
-    private Button btnMul;
-    private Button btnDiv;
-    private Button btnSub;
-    private Button btnAdd;
-
-    private Button btnPoint;
-    private Button btnEqual;
-
-    private Button btn0;
-    private Button btn1;
-    private Button btn2;
-    private Button btn3;
-    private Button btn4;
-    private Button btn5;
-    private Button btn6;
-    private Button btn7;
-    private Button btn8;
-    private Button btn9;
+    private EditText etNum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        tvNum = (TextView) findViewById(R.id.tvNum);
+        etNum = (EditText) findViewById(R.id.etNum);
 
-        btnDel = (Button) findViewById(R.id.btnDel);
+        Button btnDel = (Button) findViewById(R.id.btnDel);
         btnDel.setOnClickListener(this);
 
-        btnMul = (Button) findViewById(R.id.btnMul);
+        Button btnMul = (Button) findViewById(R.id.btnMul);
         btnMul.setOnClickListener(this);
         btnMul.setTag(OperationType.MULTIPLE);
 
-        btnDiv = (Button) findViewById(R.id.btnDiv);
+        Button btnDiv = (Button) findViewById(R.id.btnDiv);
         btnDiv.setOnClickListener(this);
         btnDiv.setTag(OperationType.DIVISION);
 
-        btnSub = (Button) findViewById(R.id.btnSub);
+        Button btnSub = (Button) findViewById(R.id.btnSub);
         btnSub.setOnClickListener(this);
         btnSub.setTag(OperationType.SUBTRACT);
 
-        btnAdd = (Button) findViewById(R.id.btnAdd);
+        Button btnAdd = (Button) findViewById(R.id.btnAdd);
         btnAdd.setOnClickListener(this);
         btnAdd.setTag(OperationType.ADD);
 
-        btnPoint = (Button) findViewById(R.id.btnPoint);
+        Button btnPoint = (Button) findViewById(R.id.btnPoint);
         btnPoint.setOnClickListener(this);
 
-        btnEqual = (Button) findViewById(R.id.btnEqual);
+        Button btnEqual = (Button) findViewById(R.id.btnEqual);
         btnEqual.setOnClickListener(this);
 
-        btn0 = (Button) findViewById(R.id.btn0);
+        Button btnClean = (Button) findViewById(R.id.btnClean);
+        btnClean.setOnClickListener(this);
+
+        Button btn0 = (Button) findViewById(R.id.btn0);
         btn0.setOnClickListener(this);
         btn0.setTag(0);
 
-        btn1 = (Button) findViewById(R.id.btn1);
+        Button btn1 = (Button) findViewById(R.id.btn1);
         btn1.setOnClickListener(this);
         btn1.setTag(1);
 
-        btn2 = (Button) findViewById(R.id.btn2);
+        Button btn2 = (Button) findViewById(R.id.btn2);
         btn2.setOnClickListener(this);
         btn2.setTag(2);
 
-        btn3 = (Button) findViewById(R.id.btn3);
+        Button btn3 = (Button) findViewById(R.id.btn3);
         btn3.setOnClickListener(this);
         btn3.setTag(3);
 
-        btn4 = (Button) findViewById(R.id.btn4);
+        Button btn4 = (Button) findViewById(R.id.btn4);
         btn4.setOnClickListener(this);
         btn4.setTag(4);
 
-        btn5 = (Button) findViewById(R.id.btn5);
+        Button btn5 = (Button) findViewById(R.id.btn5);
         btn5.setOnClickListener(this);
         btn5.setTag(5);
 
-        btn6 = (Button) findViewById(R.id.btn6);
+        Button btn6 = (Button) findViewById(R.id.btn6);
         btn6.setOnClickListener(this);
         btn6.setTag(6);
 
-        btn7 = (Button) findViewById(R.id.btn7);
+        Button btn7 = (Button) findViewById(R.id.btn7);
         btn7.setOnClickListener(this);
         btn7.setTag(7);
 
-        btn8 = (Button) findViewById(R.id.btn8);
+        Button btn8 = (Button) findViewById(R.id.btn8);
         btn8.setOnClickListener(this);
         btn8.setTag(8);
 
-        btn9 = (Button) findViewById(R.id.btn9);
+        Button btn9 = (Button) findViewById(R.id.btn9);
         btn9.setOnClickListener(this);
         btn9.setTag(9);
     }
@@ -142,33 +124,39 @@ public class MainActivity extends Activity implements View.OnClickListener {
             case R.id.btn9:
 
                 if (resetNumber) {
-                    tvNum.setText("0");
+                    etNum.setText("0");
                     resetNumber = false;
                 }
 
                 if (!tvNumIsFull()) {
-                    if (!tvNum.getText().toString().equals("0")) {
-                        tvNum.setText(tvNum.getText().toString() + view.getTag().toString());
+                    if (!etNum.getText().toString().equals("0")) {
+                        etNum.setText(etNum.getText().toString() + view.getTag().toString());
                     } else {
-                        tvNum.setText(view.getTag().toString());
+                        etNum.setText(view.getTag().toString());
                     }
                 }
                 newNumber = true;
                 break;
 
             case R.id.btnPoint:
-                if (!tvNum.getText().toString().contains(String.valueOf('.'))
+                if (!etNum.getText().toString().contains(String.valueOf('.'))
                         && !tvNumIsFull()) {
-                    tvNum.setText(tvNum.getText().toString() + ".");
+                    etNum.setText(etNum.getText().toString() + ".");
                 }
                 break;
 
             case R.id.btnDel:
-                if (tvNum.length() != 1 && !tvNum.getText().toString().equals("NaN")) {
-                    tvNum.setText(tvNum.getText().toString().substring(0, tvNum.length() - 1));
+                if (etNum.length() != 1 && !etNum.getText().toString().equals("NaN")) {
+                    etNum.setText(etNum.getText().toString().substring(0, etNum.length() - 1));
                 } else {
-                    tvNum.setText("0");
+                    etNum.setText("0");
+                    operation = NULL;
                 }
+                break;
+
+            case R.id.btnClean:
+                etNum.setText("0");
+                operation = NULL;
                 break;
 
             case R.id.btnAdd:
@@ -179,16 +167,18 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
             case R.id.btnDiv:
 
+                double secondNumber;
+
                 if (newNumber) {
                     if (operation != NULL) {
-                        secondNumber = Double.valueOf(tvNum.getText().toString());
-                        tvNum.setText(doCalc(firstNumber, secondNumber, operation));
+                        secondNumber = Double.valueOf(etNum.getText().toString());
+                        etNum.setText(doCalc(firstNumber, secondNumber, operation));
                         newNumber = false;
                     }
 
                     operation = (OperationType) view.getTag();
 
-                    firstNumber = Double.valueOf(tvNum.getText().toString());
+                    firstNumber = Double.valueOf(etNum.getText().toString());
 
                     resetNumber = true;
                 } else {
@@ -200,35 +190,44 @@ public class MainActivity extends Activity implements View.OnClickListener {
             case R.id.btnEqual:
 
                 if (operation != NULL) {
-                    secondNumber = Double.valueOf(tvNum.getText().toString());
-                    tvNum.setText(doCalc(firstNumber, secondNumber, operation));
+                    secondNumber = Double.valueOf(etNum.getText().toString());
+                    etNum.setText(doCalc(firstNumber, secondNumber, operation));
+                    resetNumber = true;
                 }
                 operation = NULL;
                 break;
         }
     }
 
-    private String doCalc(double a, double b, OperationType oper) {
-        switch (oper) {
+    private String doCalc(double a, double b, OperationType operationType) {
+
+        double result = 0;
+
+        switch (operationType) {
             case ADD:
-                return Double.toString(a + b);
+                result = a + b;
+                break;
 
             case SUBTRACT:
-                return Double.toString(a - b);
+                result = a - b;
+                break;
 
             case MULTIPLE:
-                return Double.toString(a * b);
+                result = a * b;
+                break;
 
             case DIVISION:
-                return (b != 0 ? Double.toString(a / b) : ("NaN"));
+                if (b != 0) result = a / b;
+                else return "NaN";
+                break;
         }
 
-        return "Ilia lox";
+        return result % 1 == 0 ? Double.toString((int)result) : Double.toString(result);
     }
 
     private boolean tvNumIsFull() {
-        if (tvNum.length() == 14) {
-            Toast.makeText(this, "Превышено максимальное число цифр(14)", Toast.LENGTH_SHORT).show();
+        if (etNum.length() == 15) {
+            Toast.makeText(this, "Превышено максимальное число цифр(15)", Toast.LENGTH_SHORT).show();
             return true;
         } else return false;
     }
