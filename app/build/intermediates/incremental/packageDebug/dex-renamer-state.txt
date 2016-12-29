@@ -1,4 +1,4 @@
-#Thu Dec 29 01:10:39 EET 2016
+#Thu Dec 29 05:05:10 EET 2016
 base.0=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
 file.0=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

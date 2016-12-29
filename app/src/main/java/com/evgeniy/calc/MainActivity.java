@@ -1,7 +1,10 @@
 package com.evgeniy.calc;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -97,6 +100,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         Button btn9 = (Button) findViewById(R.id.btn9);
         btn9.setOnClickListener(this);
         btn9.setTag(9);
+
+        loadText();
     }
 
     @Override
@@ -222,7 +227,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
         }
 
-        return result % 1 == 0 ? Double.toString((int) result) : Double.toString(result);
+        return ((result % 1 == 0) ? (Double.toString((int) result)) : (Double.toString(result)));
     }
 
     private boolean tvNumIsFull() {
@@ -230,6 +235,44 @@ public class MainActivity extends Activity implements View.OnClickListener {
             Toast.makeText(this, "Превышено максимальное число цифр(15)", Toast.LENGTH_SHORT).show();
             return true;
         } else return false;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        menu.add("Настройки");
+        menu.add("О приложении");
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onPause();
+        saveText();
+    }
+
+    SharedPreferences sPref;
+
+    final String SAVED_TEXT = "saved_text";
+
+    void saveText() {
+        sPref = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref.edit();
+        ed.putString(SAVED_TEXT, etNum.getText().toString());
+        ed.apply();
+    }
+
+    void loadText() {
+        sPref = getPreferences(MODE_PRIVATE);
+        String savedText = sPref.getString(SAVED_TEXT, "");
+        etNum.setText(savedText);
     }
 }
 
