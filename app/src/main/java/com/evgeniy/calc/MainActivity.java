@@ -32,6 +32,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         setContentView(R.layout.activity_main);
 
         etNum = (EditText) findViewById(R.id.etNum);
+        etNum.setText("0");
 
         Button btnDel = (Button) findViewById(R.id.btnDel);
         btnDel.setOnClickListener(this);
@@ -238,22 +239,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        menu.add("Настройки");
-        menu.add("О приложении");
-
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    protected void onDestroy() {
+    protected void onPause() {
         super.onPause();
         saveText();
     }
@@ -273,6 +259,29 @@ public class MainActivity extends Activity implements View.OnClickListener {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT, "");
         etNum.setText(savedText);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            case R.id.action_settings:
+                // TODO add open settings activity
+                return true;
+
+            case R.id.action_about:
+                // TODO add open about activity
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
 
