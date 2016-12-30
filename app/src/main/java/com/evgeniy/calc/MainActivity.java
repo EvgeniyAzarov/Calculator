@@ -181,6 +181,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
                     } else {
                         etNum.setText("-" + etNum.getText().toString());
                     }
+
+                    firstNumber = Double.parseDouble(etNum.getText().toString());
                 }
                 break;
 
@@ -192,15 +194,15 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
             case R.id.btnDiv:
 
-                double secondNumber;
-
                 resetNumber = true;
 
+                double secondNumber;
+
                 if (newNumber && operation != NULL) {
-                    secondNumber = Double.valueOf(etNum.getText().toString());
+                    secondNumber = Double.parseDouble(etNum.getText().toString());
                     etNum.setText(doCalc(firstNumber, secondNumber, operation));
                 }
-                firstNumber = Double.valueOf(etNum.getText().toString());
+                firstNumber = Double.parseDouble(etNum.getText().toString());
 
                 operation = (OperationType) view.getTag();
 
@@ -210,8 +212,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
             case R.id.btnEqual:
 
-                if (operation != NULL) {
-                    secondNumber = Double.valueOf(etNum.getText().toString());
+                if (newNumber && operation != NULL) {
+                    secondNumber = Double.parseDouble(etNum.getText().toString());
                     etNum.setText(doCalc(firstNumber, secondNumber, operation));
                     resetNumber = true;
                 }
@@ -243,7 +245,22 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
         }
 
-        return ((result % 1 == 0) ? (Double.toString((int) result)) : (Double.toString(result)));
+        String resultInStr = Double.toString(result);
+
+        if (resultInStr.contains(String.valueOf('.'))) {
+            for (int i = resultInStr.length()-1; i > 0; i--) {
+                if (resultInStr.charAt(i) == '0') {
+                    resultInStr = resultInStr.substring(0, resultInStr.length()-1);
+                } else if(resultInStr.charAt(i) == '.') {
+                    resultInStr = resultInStr.substring(0, resultInStr.length()-1);
+                    break;
+                } else {
+                    break;
+                }
+            }
+        }
+
+        return resultInStr;
     }
 
     private boolean tvNumIsFull() {
