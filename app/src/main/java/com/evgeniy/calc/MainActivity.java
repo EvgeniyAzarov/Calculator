@@ -36,6 +36,14 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         Button btnDel = (Button) findViewById(R.id.btnDel);
         btnDel.setOnClickListener(this);
+        btnDel.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                etNum.setText("0");
+                operation = NULL;
+                return true;
+            }
+        });
 
         Button btnMul = (Button) findViewById(R.id.btnMul);
         btnMul.setOnClickListener(this);
@@ -59,8 +67,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         Button btnEqual = (Button) findViewById(R.id.btnEqual);
         btnEqual.setOnClickListener(this);
 
-        Button btnClean = (Button) findViewById(R.id.btnClean);
-        btnClean.setOnClickListener(this);
+        Button btnPlusMinus = (Button) findViewById(R.id.btnPlusMinus);
+        btnPlusMinus.setOnClickListener(this);
 
         Button btn0 = (Button) findViewById(R.id.btn0);
         btn0.setOnClickListener(this);
@@ -152,8 +160,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
 
             case R.id.btnDel:
-                if (etNum.length() != 1 && !etNum.getText().toString().equals("NaN")
-                        && etNum.getText().toString().charAt(etNum.length() - 2) != '.') {
+                if (etNum.length() > 1
+                        && !etNum.getText().toString().equals("NaN")
+                        && etNum.getText().toString().charAt(etNum.length() - 2) != '.'
+                        && etNum.getText().toString().charAt(etNum.length() - 2) != '-') {
                     etNum.setText(etNum.getText().toString().substring(0, etNum.length() - 1));
                 } else if (etNum.length() > 2
                         && etNum.getText().toString().charAt(etNum.length() - 2) == '.') {
@@ -164,9 +174,14 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 }
                 break;
 
-            case R.id.btnClean:
-                etNum.setText("0");
-                operation = NULL;
+            case R.id.btnPlusMinus:
+                if (!etNum.getText().toString().equals("0")) {
+                    if (etNum.getText().toString().charAt(0) == '-') {
+                        etNum.setText(etNum.getText().toString().substring(1, etNum.length()));
+                    } else {
+                        etNum.setText("-" + etNum.getText().toString());
+                    }
+                }
                 break;
 
             case R.id.btnAdd:

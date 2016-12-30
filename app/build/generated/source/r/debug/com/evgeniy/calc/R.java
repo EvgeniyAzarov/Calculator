@@ -34,11 +34,11 @@ public final class R {
         public static final int btn8=0x7f09000c;
         public static final int btn9=0x7f09000b;
         public static final int btnAdd=0x7f090007;
-        public static final int btnClean=0x7f090011;
         public static final int btnDel=0x7f09000e;
         public static final int btnDiv=0x7f09000f;
         public static final int btnEqual=0x7f090003;
         public static final int btnMul=0x7f090010;
+        public static final int btnPlusMinus=0x7f090011;
         public static final int btnPoint=0x7f090001;
         public static final int btnSub=0x7f09000a;
         public static final int etNum=0x7f090013;
@@ -67,11 +67,11 @@ public final class R {
         public static final int button_8=0x7f04000b;
         public static final int button_9=0x7f04000c;
         public static final int button_add=0x7f04000d;
-        public static final int button_clean=0x7f04000e;
-        public static final int button_delete=0x7f04000f;
-        public static final int button_division=0x7f040010;
-        public static final int button_equal=0x7f040011;
-        public static final int button_multiple=0x7f040012;
+        public static final int button_delete=0x7f04000e;
+        public static final int button_division=0x7f04000f;
+        public static final int button_equal=0x7f040010;
+        public static final int button_multiple=0x7f040011;
+        public static final int button_plus_minus=0x7f040012;
         public static final int button_point=0x7f040013;
         public static final int button_subtract=0x7f040014;
     }

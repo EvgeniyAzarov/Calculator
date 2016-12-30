@@ -7,3 +7,44 @@
 /build
 /captures
 .externalNativeBuild
+Будет удалено build/generated/assets/
+Будет удалено build/generated/res/
+Будет удалено build/generated/source/aidl/
+Будет удалено build/generated/source/apt/
+Будет удалено build/generated/source/rs/
+Будет удалено build/intermediates/assets/
+Будет удалено build/intermediates/dependency-cache/
+Будет удалено build/intermediates/exploded-aar/com.android.support.test.espresso/espresso-core/2.2.2/aidl/
+Будет удалено build/intermediates/exploded-aar/com.android.support.test.espresso/espresso-core/2.2.2/assets/
+Будет удалено build/intermediates/exploded-aar/com.android.support.test.espresso/espresso-core/2.2.2/res/
+Будет удалено build/intermediates/exploded-aar/com.android.support.test.espresso/espresso-idling-resource/2.2.2/aidl/
+Будет удалено build/intermediates/exploded-aar/com.android.support.test.espresso/espresso-idling-resource/2.2.2/assets/
+Будет удалено build/intermediates/exploded-aar/com.android.support.test.espresso/espresso-idling-resource/2.2.2/res/
+Будет удалено build/intermediates/exploded-aar/com.android.support.test/exposed-instrumentation-api-publish/0.5/aidl/
+Будет удалено build/intermediates/exploded-aar/com.android.support.test/exposed-instrumentation-api-publish/0.5/assets/
+Будет удалено build/intermediates/exploded-aar/com.android.support.test/exposed-instrumentation-api-publish/0.5/res/
+Будет удалено build/intermediates/exploded-aar/com.android.support.test/rules/0.5/aidl/
+Будет удалено build/intermediates/exploded-aar/com.android.support.test/rules/0.5/assets/
+Будет удалено build/intermediates/exploded-aar/com.android.support.test/runner/0.5/aidl/
+Будет удалено build/intermediates/exploded-aar/com.android.support.test/runner/0.5/assets/
+Будет удалено build/intermediates/exploded-aar/com.android.support.test/runner/0.5/res/
+Будет удалено build/intermediates/incremental/mergeDebugAndroidTestResources/aapt-temp/
+Будет удалено build/intermediates/incremental/mergeDebugResources/aapt-temp/
+Будет удалено build/intermediates/incremental/packageDebugAndroidTest/
+Будет удалено build/intermediates/incremental/packageRelease/
+Будет удалено build/intermediates/incremental/processDebugAndroidTestResources/
+Будет удалено build/intermediates/incremental/processDebugResources/
+Будет удалено build/intermediates/jniLibs/
+Будет удалено build/intermediates/manifest/tmp/
+Будет удалено build/intermediates/manifests/instant-run/
+Будет удалено build/intermediates/pre-dexed/
+Будет удалено build/intermediates/rs/
+Будет удалено build/intermediates/shaders/
+Будет удалено build/intermediates/symbols/debug/
+Будет удалено build/intermediates/transforms/mergeJavaRes/
+Будет удалено build/intermediates/transforms/mergeJniLibs/
+Будет удалено build/tmp/
+Будет удалено libs/
+Будет удалено src/androidTest/
+Будет удалено src/main/res/drawable/
+Будет удалено src/test/
