@@ -20,12 +20,12 @@
     <string name="button_9" translatable="false">9</string>
     <string name="button_add" translatable="false">+</string>
     <string name="button_delete" translatable="false">&lt;-</string>
-    <string name="button_division" translatable="false">/</string>
+    <string name="button_division" translatable="false">÷</string>
     <string name="button_equal" translatable="false">=</string>
     <string name="button_multiple" translatable="false">*</string>
-    <string name="button_plus_minus">±</string>
+    <string name="button_plus_minus" translatable="false">±</string>
     <string name="button_point" translatable="false">.</string>
-    <string name="button_subtract" translatable="false">--</string>
+    <string name="button_subtract" translatable="false">—</string>
     <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         
     </style>

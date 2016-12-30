@@ -11,13 +11,13 @@
     <string name="button_add" translatable="false">+</string>
     <string name="button_6" translatable="false">6</string>
     <string name="button_4" translatable="false">4</string>
-    <string name="button_subtract" translatable="false">--</string>
     <string name="button_9" translatable="false">9</string>
     <string name="button_8" translatable="false">8</string>
     <string name="button_7" translatable="false">7</string>
     <string name="button_delete" translatable="false"><![CDATA[<-]]></string>
-    <string name="button_division" translatable="false">/</string>
     <string name="button_multiple" translatable="false">*</string>
     <string name="button_5" translatable="false">5</string>
-    <string name="button_plus_minus">±</string>
+    <string name="button_plus_minus" translatable="false">±</string>
+    <string name="button_division" translatable="false">÷</string>
+    <string name="button_subtract" translatable="false">—</string>
 </resources>
