@@ -1,6 +1,7 @@
 package com.evgeniy.calc;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
@@ -248,11 +249,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
         String resultInStr = Double.toString(result);
 
         if (resultInStr.contains(String.valueOf('.'))) {
-            for (int i = resultInStr.length()-1; i > 0; i--) {
+            for (int i = resultInStr.length() - 1; i > 0; i--) {
                 if (resultInStr.charAt(i) == '0') {
-                    resultInStr = resultInStr.substring(0, resultInStr.length()-1);
-                } else if(resultInStr.charAt(i) == '.') {
-                    resultInStr = resultInStr.substring(0, resultInStr.length()-1);
+                    resultInStr = resultInStr.substring(0, resultInStr.length() - 1);
+                } else if (resultInStr.charAt(i) == '.') {
+                    resultInStr = resultInStr.substring(0, resultInStr.length() - 1);
                     break;
                 } else {
                     break;
@@ -309,6 +310,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
             case R.id.action_about:
                 // TODO add open about activity
+                startActivity(new Intent(this, AboutActivity.class));
                 return true;
 
             default:

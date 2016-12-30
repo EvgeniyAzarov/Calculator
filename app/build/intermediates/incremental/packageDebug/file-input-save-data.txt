@@ -1,19 +1,21 @@
 #Internal package file, do not edit.
-#Fri Dec 30 17:42:50 EET 2016
+#Fri Dec 30 23:51:30 EET 2016
 8.set=ANDROID_RESOURCE
 1.base=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 1.file=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
-3.file=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_/res/drawable/circle_button_pressed.xml
+3.file=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_/res/layout/activity_about.xml
 3.base=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_
 4.set=ANDROID_RESOURCE
 5.base=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_
-5.file=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_/resources.arsc
+5.file=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
 7.base=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_
-7.file=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_/res/menu/menu_main.xml
-11.file=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_/res/mipmap-xhdpi-v4/ic_launcher.png
+7.file=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_/res/mipmap-hdpi-v4/ic_launcher.png
+11.file=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_/res/mipmap-xxxhdpi-v4/ic_launcher.png
 11.base=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_
 9.base=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_
-9.file=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_/res/drawable/circle_button.xml
+9.file=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_/res/mipmap-mdpi-v4/ic_launcher.png
+13.file=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_/res/layout/activity_main.xml
+13.base=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_
 11.set=ANDROID_RESOURCE
 0.set=ANDROID_RESOURCE
 7.set=ANDROID_RESOURCE
@@ -24,19 +26,20 @@
 6.set=ANDROID_RESOURCE
 2.file=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_/res/mipmap-xxhdpi-v4/ic_launcher.png
 2.base=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_
-4.file=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
+4.file=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_/res/drawable/circle_button_pressed.xml
 4.base=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_
 6.base=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_
-6.file=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_/res/mipmap-hdpi-v4/ic_launcher.png
+6.file=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_/resources.arsc
 10.base=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_
-10.file=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_/res/mipmap-xxxhdpi-v4/ic_launcher.png
+10.file=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_/res/drawable/circle_button.xml
+13.set=ANDROID_RESOURCE
 8.base=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_
-8.file=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_/res/mipmap-mdpi-v4/ic_launcher.png
+8.file=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_/res/menu/menu_main.xml
 2.set=ANDROID_RESOURCE
-12.file=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_/res/layout/activity_main.xml
+12.file=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_/res/mipmap-xhdpi-v4/ic_launcher.png
 12.base=/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/resources-debug.ap_
 9.set=ANDROID_RESOURCE
-count=13
+count=14
 5.set=ANDROID_RESOURCE
 12.set=ANDROID_RESOURCE
 1.set=DEX

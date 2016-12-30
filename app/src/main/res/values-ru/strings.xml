@@ -3,4 +3,8 @@
     <string name="app_name">Калькулятор</string>
     <string name="action_settings">Настройки</string>
     <string name="action_about">О приложении</string>
+    <string name="textview_aboutapp">Калькулятор v1.0</string>
+    <string name="textview_developer">Разработчик: Азаров Евгений</string>
+    <string name="textview_description">Простой калькулятор с классным интерфейсом :)</string>
+    <string name="go_to_back">Назад</string>
 </resources>

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/evgeniy/Sources/Android/Calculator/app/src/main/AndroidManifest.xml:2:1-20:12
+ADDED from /home/evgeniy/Sources/Android/Calculator/app/src/main/AndroidManifest.xml:2:1-24:12
 	package
 		ADDED from /home/evgeniy/Sources/Android/Calculator/app/src/main/AndroidManifest.xml:3:5-31
 		INJECTED from /home/evgeniy/Sources/Android/Calculator/app/src/main/AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from /home/evgeniy/Sources/Android/Calculator/app/src/main/AndroidManifest
 		INJECTED from /home/evgeniy/Sources/Android/Calculator/app/src/main/AndroidManifest.xml
 		INJECTED from /home/evgeniy/Sources/Android/Calculator/app/src/main/AndroidManifest.xml
 application
-ADDED from /home/evgeniy/Sources/Android/Calculator/app/src/main/AndroidManifest.xml:5:5-18:19
+ADDED from /home/evgeniy/Sources/Android/Calculator/app/src/main/AndroidManifest.xml:5:5-22:19
 	android:label
 		ADDED from /home/evgeniy/Sources/Android/Calculator/app/src/main/AndroidManifest.xml:8:9-41
 	android:supportsRtl
@@ -39,6 +39,10 @@ category#android.intent.category.LAUNCHER
 ADDED from /home/evgeniy/Sources/Android/Calculator/app/src/main/AndroidManifest.xml:15:17-77
 	android:name
 		ADDED from /home/evgeniy/Sources/Android/Calculator/app/src/main/AndroidManifest.xml:15:27-74
+activity#com.evgeniy.calc.AboutActivity
+ADDED from /home/evgeniy/Sources/Android/Calculator/app/src/main/AndroidManifest.xml:19:9-21:20
+	android:name
+		ADDED from /home/evgeniy/Sources/Android/Calculator/app/src/main/AndroidManifest.xml:19:19-48
 uses-sdk
 INJECTED from /home/evgeniy/Sources/Android/Calculator/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 	android:targetSdkVersion

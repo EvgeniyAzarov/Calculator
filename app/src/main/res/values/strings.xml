@@ -15,9 +15,13 @@
     <string name="button_8" translatable="false">8</string>
     <string name="button_7" translatable="false">7</string>
     <string name="button_delete" translatable="false"><![CDATA[<-]]></string>
-    <string name="button_multiple" translatable="false">*</string>
+    <string name="button_multiple" translatable="false">&#215;</string>
     <string name="button_5" translatable="false">5</string>
     <string name="button_plus_minus" translatable="false">±</string>
     <string name="button_division" translatable="false">÷</string>
     <string name="button_subtract" translatable="false">—</string>
+    <string name="textview_aboutapp">Calculator v1.0</string>
+    <string name="textview_developer">Developer: Azarov Evgeniy</string>
+    <string name="textview_description">Just a calculator with a cool interface :)</string>
+    <string name="go_to_back">Go to back</string>
 </resources>
