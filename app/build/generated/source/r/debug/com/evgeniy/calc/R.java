@@ -23,10 +23,11 @@ public final class R {
         public static final int circle_button=0x7f020000;
         public static final int circle_button_normal=0x7f020001;
         public static final int circle_button_pressed=0x7f020002;
+        public static final int separator=0x7f020003;
     }
     public static final class id {
-        public static final int action_about=0x7f0a0016;
-        public static final int action_settings=0x7f0a0015;
+        public static final int action_about=0x7f0a001c;
+        public static final int action_settings=0x7f0a001b;
         public static final int activity_main=0x7f0a0001;
         public static final int btn0=0x7f0a0003;
         public static final int btn1=0x7f0a0007;
@@ -48,10 +49,17 @@ public final class R {
         public static final int btnPoint=0x7f0a0002;
         public static final int btnSub=0x7f0a000b;
         public static final int etNum=0x7f0a0014;
+        public static final int radioButtonDark=0x7f0a001a;
+        public static final int radioButtonLight=0x7f0a0019;
+        public static final int radioGroupTheme=0x7f0a0018;
+        public static final int switchAdvencedMode=0x7f0a0016;
+        public static final int switchSave=0x7f0a0015;
+        public static final int tvTheme=0x7f0a0017;
     }
     public static final class layout {
         public static final int activity_about=0x7f040000;
         public static final int activity_main=0x7f040001;
+        public static final int activity_settings=0x7f040002;
     }
     public static final class menu {
         public static final int menu_main=0x7f090000;
@@ -63,28 +71,33 @@ public final class R {
         public static final int action_about=0x7f050000;
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050002;
-        public static final int button_0=0x7f050007;
-        public static final int button_1=0x7f050008;
-        public static final int button_2=0x7f050009;
-        public static final int button_3=0x7f05000a;
-        public static final int button_4=0x7f05000b;
-        public static final int button_5=0x7f05000c;
-        public static final int button_6=0x7f05000d;
-        public static final int button_7=0x7f05000e;
-        public static final int button_8=0x7f05000f;
-        public static final int button_9=0x7f050010;
-        public static final int button_add=0x7f050011;
-        public static final int button_delete=0x7f050012;
-        public static final int button_division=0x7f050013;
-        public static final int button_equal=0x7f050014;
-        public static final int button_multiple=0x7f050015;
-        public static final int button_plus_minus=0x7f050016;
-        public static final int button_point=0x7f050017;
-        public static final int button_subtract=0x7f050018;
+        public static final int button_0=0x7f05000c;
+        public static final int button_1=0x7f05000d;
+        public static final int button_2=0x7f05000e;
+        public static final int button_3=0x7f05000f;
+        public static final int button_4=0x7f050010;
+        public static final int button_5=0x7f050011;
+        public static final int button_6=0x7f050012;
+        public static final int button_7=0x7f050013;
+        public static final int button_8=0x7f050014;
+        public static final int button_9=0x7f050015;
+        public static final int button_add=0x7f050016;
+        public static final int button_delete=0x7f050017;
+        public static final int button_division=0x7f050018;
+        public static final int button_equal=0x7f050019;
+        public static final int button_multiple=0x7f05001a;
+        public static final int button_plus_minus=0x7f05001b;
+        public static final int button_point=0x7f05001c;
+        public static final int button_subtract=0x7f05001d;
         public static final int go_to_back=0x7f050003;
-        public static final int textview_aboutapp=0x7f050004;
-        public static final int textview_description=0x7f050005;
-        public static final int textview_developer=0x7f050006;
+        public static final int settings_advancedmode=0x7f050004;
+        public static final int settings_save=0x7f050005;
+        public static final int settings_theme=0x7f050006;
+        public static final int settings_theme_dark=0x7f050007;
+        public static final int settings_theme_light=0x7f050008;
+        public static final int textview_aboutapp=0x7f050009;
+        public static final int textview_description=0x7f05000a;
+        public static final int textview_developer=0x7f05000b;
     }
     public static final class style {
         public static final int AppTheme=0x7f080000;

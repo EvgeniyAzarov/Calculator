@@ -7,4 +7,9 @@
     <string name="textview_developer">Разработчик: Азаров Евгений</string>
     <string name="textview_description">Простой калькулятор с классным интерфейсом :)</string>
     <string name="go_to_back">Назад</string>
+    <string name="settings_save">Сохранять значение при закрытии</string>
+    <string name="settings_advancedmode">Расширенный режим</string>
+    <string name="settings_theme">Тема</string>
+    <string name="settings_theme_dark">Тёмная</string>
+    <string name="settings_theme_light">Светлая</string>
 </resources>

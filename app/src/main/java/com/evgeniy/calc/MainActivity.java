@@ -27,13 +27,31 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     private EditText etNum;
 
+    static SharedPreferences valueInEtNum;
+
+    static final String APP_PREFERENCES_TextInEtNum = "etNumText";
+
+    static final String APP_PREFERENCES_SaveValue = "saveValue";
+
+    static SharedPreferences settingsSaveValue;
+
+    static boolean saveValue;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        settingsSaveValue = getSharedPreferences(APP_PREFERENCES_SaveValue, MODE_PRIVATE);
+
+        saveValue = settingsSaveValue.getBoolean(APP_PREFERENCES_SaveValue, true);
+
+        valueInEtNum = getSharedPreferences(APP_PREFERENCES_TextInEtNum, MODE_PRIVATE);
+
         etNum = (EditText) findViewById(R.id.etNum);
-        etNum.setText("0");
+
+        etNum.setText(valueInEtNum.getString(APP_PREFERENCES_TextInEtNum, "0"));
 
         Button btnDel = (Button) findViewById(R.id.btnDel);
         btnDel.setOnClickListener(this);
@@ -110,8 +128,18 @@ public class MainActivity extends Activity implements View.OnClickListener {
         Button btn9 = (Button) findViewById(R.id.btn9);
         btn9.setOnClickListener(this);
         btn9.setTag(9);
+    }
 
-        loadText();
+    @Override
+    protected void onPause() {
+        super.onPause();
+        SharedPreferences.Editor editor = valueInEtNum.edit();
+        if (saveValue) {
+            editor.putString(APP_PREFERENCES_TextInEtNum, etNum.getText().toString());
+        } else {
+            editor.putString(APP_PREFERENCES_TextInEtNum, "0");
+        }
+        editor.apply();
     }
 
     @Override
@@ -272,29 +300,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
 
     @Override
-    protected void onPause() {
-        super.onPause();
-        saveText();
-    }
-
-    SharedPreferences sPref;
-
-    final String SAVED_TEXT = "saved_text";
-
-    void saveText() {
-        sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT, etNum.getText().toString());
-        ed.apply();
-    }
-
-    void loadText() {
-        sPref = getPreferences(MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT, "");
-        etNum.setText(savedText);
-    }
-
-    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return super.onCreateOptionsMenu(menu);
@@ -305,11 +310,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         switch (item.getItemId()) {
             case R.id.action_settings:
-                // TODO add open settings activity
+                startActivity(new Intent(this, SettingsActivity.class));
                 return true;
 
             case R.id.action_about:
-                // TODO add open about activity
                 startActivity(new Intent(this, AboutActivity.class));
                 return true;
 

@@ -275,14 +275,7 @@
                     "endOffset": 1385
                 },
                 "from": {
-                    "file": "/home/evgeniy/Sources/Android/Calculator/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 972,
-                        "endColumn": 71,
-                        "endOffset": 1039
-                    }
+                    "file": "/home/evgeniy/Sources/Android/Calculator/app/src/main/res/values/strings.xml"
                 }
             },
             {
@@ -330,14 +323,7 @@
                     "endOffset": 1635
                 },
                 "from": {
-                    "file": "/home/evgeniy/Sources/Android/Calculator/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 25,
-                        "startColumn": 4,
-                        "startOffset": 1534,
-                        "endColumn": 49,
-                        "endOffset": 1579
-                    }
+                    "file": "/home/evgeniy/Sources/Android/Calculator/app/src/main/res/values/strings.xml"
                 }
             },
             {
@@ -345,17 +331,17 @@
                     "startLine": 29,
                     "startColumn": 4,
                     "startOffset": 1640,
-                    "endColumn": 61,
-                    "endOffset": 1697
+                    "endColumn": 63,
+                    "endOffset": 1699
                 },
                 "from": {
                     "file": "/home/evgeniy/Sources/Android/Calculator/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 22,
+                        "startLine": 27,
                         "startColumn": 4,
-                        "startOffset": 1307,
-                        "endColumn": 61,
-                        "endOffset": 1364
+                        "startOffset": 1656,
+                        "endColumn": 63,
+                        "endOffset": 1715
                     }
                 }
             },
@@ -363,18 +349,18 @@
                 "to": {
                     "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 1702,
-                    "endColumn": 91,
-                    "endOffset": 1789
+                    "startOffset": 1704,
+                    "endColumn": 71,
+                    "endOffset": 1771
                 },
                 "from": {
                     "file": "/home/evgeniy/Sources/Android/Calculator/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 24,
+                        "startLine": 26,
                         "startColumn": 4,
-                        "startOffset": 1442,
-                        "endColumn": 91,
-                        "endOffset": 1529
+                        "startOffset": 1584,
+                        "endColumn": 71,
+                        "endOffset": 1651
                     }
                 }
             },
@@ -382,18 +368,18 @@
                 "to": {
                     "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 1794,
-                    "endColumn": 72,
-                    "endOffset": 1862
+                    "startOffset": 1776,
+                    "endColumn": 48,
+                    "endOffset": 1820
                 },
                 "from": {
                     "file": "/home/evgeniy/Sources/Android/Calculator/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 23,
+                        "startLine": 28,
                         "startColumn": 4,
-                        "startOffset": 1369,
-                        "endColumn": 72,
-                        "endOffset": 1437
+                        "startOffset": 1720,
+                        "endColumn": 48,
+                        "endOffset": 1764
                     }
                 }
             },
@@ -401,10 +387,84 @@
                 "to": {
                     "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 1867,
-                    "endLine": 34,
+                    "startOffset": 1825,
+                    "endColumn": 52,
+                    "endOffset": 1873
+                },
+                "from": {
+                    "file": "/home/evgeniy/Sources/Android/Calculator/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 1824,
+                        "endColumn": 52,
+                        "endOffset": 1872
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 1878,
+                    "endColumn": 54,
+                    "endOffset": 1928
+                },
+                "from": {
+                    "file": "/home/evgeniy/Sources/Android/Calculator/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1769,
+                        "endColumn": 54,
+                        "endOffset": 1819
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 1933,
+                    "endColumn": 61,
+                    "endOffset": 1990
+                },
+                "from": {
+                    "file": "/home/evgeniy/Sources/Android/Calculator/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 1995,
+                    "endColumn": 91,
+                    "endOffset": 2082
+                },
+                "from": {
+                    "file": "/home/evgeniy/Sources/Android/Calculator/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 2087,
+                    "endColumn": 72,
+                    "endOffset": 2155
+                },
+                "from": {
+                    "file": "/home/evgeniy/Sources/Android/Calculator/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 2160,
+                    "endLine": 39,
                     "endColumn": 12,
-                    "endOffset": 1960
+                    "endOffset": 2253
                 },
                 "from": {
                     "file": "/home/evgeniy/Sources/Android/Calculator/app/src/main/res/values/styles.xml"

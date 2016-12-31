@@ -27,6 +27,11 @@
     <string name="button_point" translatable="false">.</string>
     <string name="button_subtract" translatable="false">—</string>
     <string name="go_to_back">Go to back</string>
+    <string name="settings_advancedmode">Advenced mode</string>
+    <string name="settings_save">Save the value when you close</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_theme_light">Light</string>
     <string name="textview_aboutapp">Calculator v1.0</string>
     <string name="textview_description">Just a calculator with a cool interface :)</string>
     <string name="textview_developer">Developer: Azarov Evgeniy</string>
