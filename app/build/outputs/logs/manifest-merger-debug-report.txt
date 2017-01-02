@@ -43,10 +43,10 @@ activity#com.evgeniy.calc.AboutActivity
 ADDED from /home/evgeniy/Sources/Android/Calculator/app/src/main/AndroidManifest.xml:19:9-21:20
 	android:name
 		ADDED from /home/evgeniy/Sources/Android/Calculator/app/src/main/AndroidManifest.xml:19:19-48
-activity#com.evgeniy.calc.SettingsActivity
+activity#com.evgeniy.calc.PrefActivity
 ADDED from /home/evgeniy/Sources/Android/Calculator/app/src/main/AndroidManifest.xml:22:9-24:20
 	android:name
-		ADDED from /home/evgeniy/Sources/Android/Calculator/app/src/main/AndroidManifest.xml:22:19-51
+		ADDED from /home/evgeniy/Sources/Android/Calculator/app/src/main/AndroidManifest.xml:22:19-47
 uses-sdk
 INJECTED from /home/evgeniy/Sources/Android/Calculator/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 	android:targetSdkVersion

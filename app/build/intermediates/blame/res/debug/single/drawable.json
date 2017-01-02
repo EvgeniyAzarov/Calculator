@@ -8,10 +8,6 @@
         "source": "/home/evgeniy/Sources/Android/Calculator/app/src/main/res/drawable/circle_button_pressed.xml"
     },
     {
-        "merged": "/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/merged/debug/drawable/separator.xml",
-        "source": "/home/evgeniy/Sources/Android/Calculator/app/src/main/res/drawable/separator.xml"
-    },
-    {
         "merged": "/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/merged/debug/drawable/circle_button.xml",
         "source": "/home/evgeniy/Sources/Android/Calculator/app/src/main/res/drawable/circle_button.xml"
     }

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="theme">
+        <item>@string/settings_theme_light</item>
+        <item>@string/settings_theme_dark</item>
+    </string-array>
     <color name="colorAccent">#FF4081</color>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
@@ -27,14 +31,18 @@
     <string name="button_point" translatable="false">.</string>
     <string name="button_subtract" translatable="false">—</string>
     <string name="go_to_back">Go to back</string>
-    <string name="settings_advancedmode">Advenced mode</string>
+    <string name="settings_advancedmode">Enable advenced mode</string>
+    <string name="settings_advancedmode_title">Advenced mode</string>
+    <string name="settings_functionality">Functionality</string>
+    <string name="settings_interface">Interface</string>
     <string name="settings_save">Save the value when you close</string>
+    <string name="settings_save_title">Saving data</string>
     <string name="settings_theme">Theme</string>
     <string name="settings_theme_dark">Dark</string>
     <string name="settings_theme_light">Light</string>
     <string name="textview_aboutapp">Calculator v1.0</string>
-    <string name="textview_description">Just a calculator with a cool interface :)</string>
     <string name="textview_developer">Developer: Azarov Evgeniy</string>
+    <string name="theme_title">Theme</string>
     <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         
     </style>

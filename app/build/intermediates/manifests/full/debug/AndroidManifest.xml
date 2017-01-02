@@ -23,7 +23,7 @@
         </activity>
         <activity android:name="com.evgeniy.calc.AboutActivity" >
         </activity>
-        <activity android:name="com.evgeniy.calc.SettingsActivity" >
+        <activity android:name="com.evgeniy.calc.PrefActivity" >
         </activity>
     </application>
 

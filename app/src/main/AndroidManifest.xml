@@ -19,7 +19,7 @@
         <activity android:name=".AboutActivity">
 
         </activity>
-        <activity android:name=".SettingsActivity">
+        <activity android:name=".PrefActivity">
 
         </activity>
     </application>

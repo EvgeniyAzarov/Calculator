@@ -4,10 +4,6 @@
         "source": "/home/evgeniy/Sources/Android/Calculator/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/merged/debug/layout/activity_settings.xml",
-        "source": "/home/evgeniy/Sources/Android/Calculator/app/src/main/res/layout/activity_settings.xml"
-    },
-    {
         "merged": "/home/evgeniy/Sources/Android/Calculator/app/build/intermediates/res/merged/debug/layout/activity_about.xml",
         "source": "/home/evgeniy/Sources/Android/Calculator/app/src/main/res/layout/activity_about.xml"
     }
