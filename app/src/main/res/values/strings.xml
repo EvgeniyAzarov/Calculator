@@ -26,12 +26,6 @@
     <string name="settings_save">Save the value when you close</string>
     <string name="settings_advancedmode_title">Advenced mode</string>
     <string name="settings_theme">Theme</string>
-    <string-array name="theme">
-        <item>@string/settings_theme_light</item>
-        <item>@string/settings_theme_dark</item>
-    </string-array>
-    <string name="settings_theme_light">Light</string>
-    <string name="settings_theme_dark">Dark</string>
     <string name="settings_save_title">Saving data</string>
     <string name="settings_advancedmode">Enable advenced mode</string>
     <string name="settings_functionality">Functionality</string>

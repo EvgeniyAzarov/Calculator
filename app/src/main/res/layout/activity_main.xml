@@ -26,8 +26,8 @@
             android:layout_height="wrap_content"
             android:layout_column="2"
             android:layout_gravity="start"
-            android:layout_row="5"
             android:layout_margin="2dp"
+            android:layout_row="5"
             android:background="@drawable/circle_button"
             android:text="@string/button_point"
             android:textSize="28sp" />
@@ -39,8 +39,8 @@
             android:layout_column="0"
             android:layout_columnSpan="2"
             android:layout_gravity="fill"
-            android:layout_row="5"
             android:layout_margin="2dp"
+            android:layout_row="5"
             android:background="@drawable/circle_button"
             android:text="@string/button_0"
             android:textSize="28sp" />
@@ -51,9 +51,9 @@
             android:layout_height="wrap_content"
             android:layout_column="3"
             android:layout_gravity="fill|end|start"
+            android:layout_margin="2dp"
             android:layout_row="4"
             android:layout_rowSpan="2"
-            android:layout_margin="2dp"
             android:background="@drawable/circle_button"
             android:text="@string/button_equal"
             android:textSize="28sp" />
@@ -64,8 +64,8 @@
             android:layout_height="wrap_content"
             android:layout_column="2"
             android:layout_gravity="start"
-            android:layout_row="4"
             android:layout_margin="2dp"
+            android:layout_row="4"
             android:background="@drawable/circle_button"
             android:text="@string/button_3"
             android:textSize="28sp" />
@@ -76,8 +76,8 @@
             android:layout_height="wrap_content"
             android:layout_column="1"
             android:layout_gravity="start"
-            android:layout_row="4"
             android:layout_margin="2dp"
+            android:layout_row="4"
             android:background="@drawable/circle_button"
             android:text="@string/button_2"
             android:textSize="28sp" />
@@ -88,11 +88,11 @@
             android:layout_height="wrap_content"
             android:layout_column="0"
             android:layout_gravity="start"
-            android:layout_row="4"
             android:layout_margin="2dp"
+            android:layout_row="4"
             android:background="@drawable/circle_button"
             android:text="@string/button_1"
-            android:textSize="28sp"/>
+            android:textSize="28sp" />
 
         <Button
             android:id="@+id/btnAdd"
@@ -100,11 +100,11 @@
             android:layout_height="wrap_content"
             android:layout_column="3"
             android:layout_gravity="start|end"
-            android:layout_row="3"
             android:layout_margin="2dp"
+            android:layout_row="3"
             android:background="@drawable/circle_button"
             android:text="@string/button_add"
-            android:textSize="28sp"/>
+            android:textSize="28sp" />
 
         <Button
             android:id="@+id/btn6"
@@ -112,11 +112,11 @@
             android:layout_height="wrap_content"
             android:layout_column="2"
             android:layout_gravity="start"
-            android:layout_row="3"
             android:layout_margin="2dp"
+            android:layout_row="3"
             android:background="@drawable/circle_button"
             android:text="@string/button_6"
-            android:textSize="28sp"/>
+            android:textSize="28sp" />
 
         <Button
             android:id="@+id/btn4"
@@ -124,11 +124,11 @@
             android:layout_height="wrap_content"
             android:layout_column="0"
             android:layout_gravity="start"
-            android:layout_row="3"
             android:layout_margin="2dp"
+            android:layout_row="3"
             android:background="@drawable/circle_button"
             android:text="@string/button_4"
-            android:textSize="28sp"/>
+            android:textSize="28sp" />
 
         <Button
             android:id="@+id/btnSub"
@@ -136,11 +136,11 @@
             android:layout_height="wrap_content"
             android:layout_column="3"
             android:layout_gravity="end|start"
-            android:layout_row="2"
             android:layout_margin="2dp"
+            android:layout_row="2"
             android:background="@drawable/circle_button"
             android:text="@string/button_subtract"
-            android:textSize="28sp"/>
+            android:textSize="28sp" />
 
         <Button
             android:id="@+id/btn9"
@@ -148,11 +148,11 @@
             android:layout_height="wrap_content"
             android:layout_column="2"
             android:layout_gravity="start"
-            android:layout_row="2"
             android:layout_margin="2dp"
+            android:layout_row="2"
             android:background="@drawable/circle_button"
             android:text="@string/button_9"
-            android:textSize="28sp"/>
+            android:textSize="28sp" />
 
         <Button
             android:id="@+id/btn8"
@@ -160,11 +160,11 @@
             android:layout_height="wrap_content"
             android:layout_column="1"
             android:layout_gravity="start"
-            android:layout_row="2"
             android:layout_margin="2dp"
+            android:layout_row="2"
             android:background="@drawable/circle_button"
             android:text="@string/button_8"
-            android:textSize="28sp"/>
+            android:textSize="28sp" />
 
         <Button
             android:id="@+id/btn7"
@@ -172,11 +172,11 @@
             android:layout_height="wrap_content"
             android:layout_column="0"
             android:layout_gravity="start"
-            android:layout_row="2"
             android:layout_margin="2dp"
+            android:layout_row="2"
             android:background="@drawable/circle_button"
             android:text="@string/button_7"
-            android:textSize="28sp"/>
+            android:textSize="28sp" />
 
         <Button
             android:id="@+id/btnDel"
@@ -184,11 +184,11 @@
             android:layout_height="wrap_content"
             android:layout_column="3"
             android:layout_gravity="top|start|end"
-            android:layout_row="1"
             android:layout_margin="2dp"
+            android:layout_row="1"
             android:background="@drawable/circle_button"
             android:text="@string/button_delete"
-            android:textSize="28sp"/>
+            android:textSize="28sp" />
 
         <Button
             android:id="@+id/btnDiv"
@@ -196,11 +196,11 @@
             android:layout_height="wrap_content"
             android:layout_column="2"
             android:layout_gravity="start|top"
-            android:layout_row="1"
             android:layout_margin="2dp"
+            android:layout_row="1"
             android:background="@drawable/circle_button"
             android:text="@string/button_division"
-            android:textSize="28sp"/>
+            android:textSize="28sp" />
 
         <Button
             android:id="@+id/btnMul"
@@ -208,11 +208,11 @@
             android:layout_height="wrap_content"
             android:layout_column="1"
             android:layout_gravity="start|top"
-            android:layout_row="1"
             android:layout_margin="2dp"
+            android:layout_row="1"
             android:background="@drawable/circle_button"
             android:text="@string/button_multiple"
-            android:textSize="28sp"/>
+            android:textSize="28sp" />
 
         <Button
             android:id="@+id/btnPlusMinus"
@@ -220,8 +220,8 @@
             android:layout_height="wrap_content"
             android:layout_column="0"
             android:layout_gravity="start|top"
-            android:layout_row="1"
             android:layout_margin="2dp"
+            android:layout_row="1"
             android:background="@drawable/circle_button"
             android:text="@string/button_plus_minus"
             android:textSize="28sp" />
@@ -232,11 +232,11 @@
             android:layout_height="wrap_content"
             android:layout_column="1"
             android:layout_gravity="start"
-            android:layout_row="3"
-            android:text="@string/button_5"
-            android:textSize="28sp"
             android:layout_margin="2dp"
-            android:background="@drawable/circle_button"/>
+            android:layout_row="3"
+            android:background="@drawable/circle_button"
+            android:text="@string/button_5"
+            android:textSize="28sp" />
 
         <EditText
             android:id="@+id/etNum"

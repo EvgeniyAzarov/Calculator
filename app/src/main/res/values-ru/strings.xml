@@ -13,7 +13,5 @@
     <string name="settings_advancedmode_title">Расширенный режим</string>
     <string name="settings_functionality">Функциональность</string>
     <string name="settings_interface">Интерфейс</string>
-    <string name="settings_theme_dark">Тёмная</string>
-    <string name="settings_theme_light">Светлая</string>
     <string name="theme_title">Тема</string>
 </resources>
