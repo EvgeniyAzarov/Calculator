@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -30,18 +29,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     SharedPreferences sPref;
 
-    SharedPreferences settings;
-
     final String SAVED_TEXT = "etNumText";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
-
-        settings = PreferenceManager.getDefaultSharedPreferences(this);
 
         etNum = (EditText) findViewById(R.id.etNum);
         etNum.setText("0");
@@ -137,10 +130,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
     protected void onResume() {
         super.onResume();
 
-        if (settings.getBoolean("save_value", true)) {
-            sPref = getPreferences(MODE_PRIVATE);
-            etNum.setText(sPref.getString(SAVED_TEXT, "0"));
-        }
+        sPref = getPreferences(MODE_PRIVATE);
+        etNum.setText(sPref.getString(SAVED_TEXT, "0"));
     }
 
     @Override
@@ -310,10 +301,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId()) {
-            case R.id.action_settings:
-                startActivity(new Intent(this, PrefActivity.class));
-                return true;
-
             case R.id.action_about:
                 startActivity(new Intent(this, AboutActivity.class));
                 return true;
