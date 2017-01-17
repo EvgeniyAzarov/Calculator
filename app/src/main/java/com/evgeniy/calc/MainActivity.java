@@ -174,6 +174,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
 
             case R.id.btnPoint:
+                if (resetNumber) {
+                    etNum.setText("0");
+                    resetNumber = false;
+                }
+
                 if (!etNum.getText().toString().contains(String.valueOf('.'))
                         && !tvNumIsFull()) {
                     etNum.setText(etNum.getText().toString() + ".");
