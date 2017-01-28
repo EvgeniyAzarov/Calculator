@@ -1,3 +1,4 @@
 # Calculator
 
-To run:  fold file  Calculator/app/build/outputs/apk/app-debug.apk to your device and install it.
+## Installation 
+Fold file  `Calculator.apk` to your device and install it.
